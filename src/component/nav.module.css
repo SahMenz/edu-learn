@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.header{
+    padding: 20px 80px;
+}
+span{
+    color: #ff5a44;
+}
+.find{
+    padding: 12px 50px;
+    border-radius: 25px ;
+    background-color: #ff5a44;
+    border: 1px solid #ff432a;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    cursor: pointer;
+}
+.bars{
+    display: none;
+    flex-direction: column;
+    margin: 30px;
+    margin-left: 60px;
+    height: 15px;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.barer{
+    width: 20px;
+    height: 3px;
+    background-color: #ff5a44;;
+}
+li{
+    cursor: pointer;
+}
+.list{
+    display: flex;
+    list-style: none;
+    width: 400px;
+    justify-content: space-between;
+}
+.side{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 650px;
+}
+li:active{
+    color: #ff5a44;
+    border-bottom: 1px solid #ff5a44;
+}
+@media screen and (max-width:1024px){
+    .side{
+        display: none;
+        flex-flow: column nowrap;
+        align-items: center;
+        margin-top: 20px;
+        padding: 20px;
+        top:0;
+        right: 0;
+        position: fixed;
+        background-color: white;
+        width: fit-content;
+        height: 220px;
+        border-radius: 20px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .list{
+        display: flex;
+        flex-flow: column nowrap;
+        width: fit-content;
+        align-items: center;
+        height: 150px;
+        font-weight: 700;
+    }
+    .bars{
+        display: flex;
+    }
+}
+@media screen and (max-width:420px){
+    .header{
+        width: 100vw;
+        display: grid;
+        justify-content: center;
+        grid-gap: 5px;
+        column-gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+        grid-template-rows: repeat(auto-fit, minmax(200px, 1fr)); 
+        padding: 5px 10px;
+        margin-top: -55px;
+    }
+}

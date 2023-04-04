@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.general{
+    padding: 80px;
+}
+.headies{
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    color:  #111113;
+    width: fit-content;
+    text-transform: capitalize;
+}
+.para{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #797777;
+    margin: 0;
+}
+.spanner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 12.8rem;
+    flex-wrap: wrap;
+    font-weight: 700;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.7);
+}
+.score{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 28rem;
+}
+.butt{
+    padding: 1rem;
+    font-weight: 700;
+    font-size: 18px;
+    padding:1.5rem 2rem ;
+    background: #FF432A;
+    border-radius: 35px;
+    border: none;
+    width: fit-content;
+}
+.contentLeft{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+    justify-content: space-between;
+}
+.backer{
+    background-image: url(/src/images/beauty.svg);
+    width: 485px;
+    height: 597px;
+    background-repeat: no-repeat ;
+    position: relative;
+}
+.content{
+    display: flex;
+}
